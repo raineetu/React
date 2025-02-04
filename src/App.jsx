@@ -1,10 +1,12 @@
-
-import PasswordGenerator from "./Components/passwordgenerattor";
+import ExpenseTracker from "./Components/ExpenseTracker";
+import { GlobalProvider } from "./Context/Globalcontext";
 
 function App() {
   return (
     <>
-      <PasswordGenerator />
+      <GlobalProvider>
+        <ExpenseTracker />
+      </GlobalProvider>
     </>
   );
 }
